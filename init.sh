@@ -40,7 +40,6 @@ else
     mv interface/src/main/proto/$templateName/ interface/src/main/proto/$appName/
 
 
-    sed -i "" "s/$templateName/$appName/g" .gitlab-ci.yml
     sed -i "" "s/$templateName/$appName/g" Dockerfile
     sed -i "" "s/$templateName/$appName/g" interface/package.json
     sed -i "" "s/$templateName/$appName/g" service/src/main/resources/datasource1.xml
