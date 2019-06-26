@@ -20,8 +20,6 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(Application.class);
         app.setRegisterShutdownHook(false);
-
-        Utils.setSpringApplicationName(app, "template-service:1.0.0");
         app.run(args);
     }
 }
